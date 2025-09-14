@@ -1,0 +1,136 @@
+/* Đặt lại các thuộc tính mặc định cho tất cả các thẻ HTML, đảm bảo giao diện đồng nhất trên các trình duyệt */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  font-family: Helvetica, Tahoma, Arial, "Heiti SC", "Microsoft YaHei",
+    "WenQuanYi Micro Hei", serif;
+}
+
+/* Đặt lại hiển thị cho các thẻ HTML5 trên trình duyệt cũ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+/* Đặt lại dòng cơ bản cho thẻ body */
+body {
+  line-height: 1;
+}
+
+/* Loại bỏ kiểu danh sách mặc định cho ol và ul */
+ol,
+ul {
+  list-style: none;
+}
+
+/* Loại bỏ dấu ngoặc kép mặc định cho blockquote và q */
+blockquote,
+q {
+  quotes: none;
+}
+
+/* Loại bỏ nội dung trước và sau cho blockquote và q */
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+}
+
+/* Đặt lại thuộc tính bảng để đảm bảo hiển thị đồng nhất */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
