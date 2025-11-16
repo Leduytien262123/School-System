@@ -64,7 +64,7 @@ export default defineConfig(({ mode }) => {
     server: {
       // hmr: false,
       host: "0.0.0.0",
-      port: 5100,
+      port: 8000,
       headers: {
         "Access-Control-Allow-Origin": "*",
       },

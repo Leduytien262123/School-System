@@ -7,11 +7,13 @@
     :theme-overrides="$globalStore.theme.overrides"
   >
     <n-global-style />
-    <!--   多router-view模式     -->
-    <template v-if="$globalStore.isRouterReload">
-      <router-view v-if="$globalStore.isIframe" name="iframe"> </router-view>
-      <router-view v-else></router-view>
-    </template>
+
+    <n-loading-bar-provider>
+      <template v-if="$globalStore.isRouterReload">
+        <router-view v-if="$globalStore.isIframe" name="iframe"> </router-view>
+        <router-view v-else></router-view>
+      </template>
+    </n-loading-bar-provider>
   </n-config-provider>
 </template>
 <script setup>

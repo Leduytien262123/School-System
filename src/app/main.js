@@ -67,7 +67,7 @@ framework.use(plugins.useRouterPlugin, {
   },
 });
 pina.state.value.global.webSite.title = "Vue Bag Admin";
-pina.state.value.global.webSite.footerText = "Bản quyền©2025 Vue Bag Admin";
+pina.state.value.global.webSite.footerText = "Bản quyền©2025 Duy Tiến";
 pina.state.value.global.webSite.logo = logo;
 
 middleware.eventEmitter.on("API:REQUEST", ({ json, text, response }) => {
@@ -93,7 +93,16 @@ middleware.eventEmitter.on("API:REQUEST", ({ json, text, response }) => {
 });
 
 middleware.eventEmitter.on("ROUTER:BEFORE", (to, from, next) => {
+  if (window.$naive && window.$naive.loadingBar) {
+    window.$naive.loadingBar.start();
+  }
   next();
+});
+
+middleware.eventEmitter.on("ROUTER:AFTER", () => {
+  if (window.$naive && window.$naive.loadingBar) {
+    window.$naive.loadingBar.finish();
+  }
 });
 
 middleware.eventEmitter.on("APP:LOGOUT", () => {

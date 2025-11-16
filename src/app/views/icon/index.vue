@@ -21,6 +21,6 @@
 <script setup>
 const handleClickCopy = (text) => {
   $global.helpers.clipboardCopy(text);
-  $global.naive.message.success("复制   " + text + "  成功");
+  $global.naive.message.success("Sao chép   " + text + "  thành công");
 };
 </script>
